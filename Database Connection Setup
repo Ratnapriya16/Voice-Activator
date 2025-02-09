@@ -1,0 +1,12 @@
+
+import psycopg2
+# PostgreSQL Database connection setup
+def connect_db():
+conn = psycopg2.connect(
+dbname="campus_connect",
+user="admin",
+password="password123",
+host="localhost",
+port="5432"
+)
+return conn
